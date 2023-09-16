@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: rgb(26, 24, 24);
+}
+
+.card{
+    background: #fff;
+    margin: 15% auto 20px;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.input h2{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.input input{
+    width: 100%;
+    font-size: 15px;
+    border-radius: 8px;
+    padding: 15px 8px;
+    border: 0.8px solid grey;
+    margin-bottom: 20px;
+}
+
+.card button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px 20px;
+    background: rgb(63, 47, 207);
+    color: #fff;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#qr-container{
+    width: 200px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+}
+
+#qr-container img{
+    width: 100%;
+    padding: 10px;
+}
+
+#qr-container.show-img{
+    max-height: 250px;
+}
+
+.error{
+    animation: shake 0.2s linear 10;
+}
+
+@keyframes shake{
+    0%{
+        tranform: translateX(0);
+    }
+    25%{
+        transform: translateX(-5px);
+    }
+    50%{
+        tranform: translateX(0);
+    }
+    75%{
+        tranform: translateX(5px);
+    }
+    100%{
+        tranform: translateX(0);
+    }
+}
+
